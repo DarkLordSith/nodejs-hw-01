@@ -1,19 +1,28 @@
 {
-  "name": "nodejs-hw-01",
+  "name": "nodejs-basics",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js",
+    "lint": "eslint src/**/*.js",
+    "start": "node ./src/index.js",
+    "generate": "node src/scripts/generateContacts.js",
+    "add-one": "node src/scripts/addOneContact.js",
+    "get-all": "node src/scripts/getAllContacts.js",
+    "count": "node src/scripts/countContacts.js",
+    "remove-all": "node src/scripts/removeAllContacts",
+    "remove-last": "node src/scripts/removeLastContact"
   },
   "keywords": [],
-  "author": "Vladimir Tryasunov <tryasunov933@gmail.com>",
+  "author": "Alexander Repeta <a.repeta@goit.global>",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "@eslint/js": "^9.20.0",
-    "@faker-js/faker": "^9.5.0",
-    "eslint": "^9.20.1",
-    "globals": "^15.15.0",
-    "nodemon": "^3.1.9"
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "globals": "^15.1.0",
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.5.0"
   }
 }
